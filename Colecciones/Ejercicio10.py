@@ -16,7 +16,7 @@ fraseCif=""
 #for para recorrer por letras la frase
 for letra in frase: 
     #concatenamos a fraseCif un get del diccionario que si encuentra la clave le asina el valor
-    fraseCif+=diccionario.get(letra,letra)
+    fraseCif+=diccionario.get(letra.lower(),letra)
 
 # Mostrar el diccionario
 print(fraseCif)
