@@ -10,12 +10,15 @@
 # Los artículos se ordenarán de menor a mayor por el nombre.
 
 
-iva=0.21
+
 
 class Articulo:
+   
+
     def __init__(self,nombre,precio, cuantos_quedan):
         self.nombre=nombre
         self.precio=precio
+        self.iva=0.21
         self.cuantos_quedan=cuantos_quedan
 
     def get_PVP(self):
