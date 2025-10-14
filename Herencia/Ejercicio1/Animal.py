@@ -8,3 +8,15 @@ class Animal:
     def __init__(self,nombre,nPatas):
         self.nombre=nombre
         self.nPatas=nPatas
+
+    def getNombre(self):
+        return self.nombre
+    
+    def getNPatas(self):
+        return self.nPatas
+
+    def __str__(self):
+        return f'Me llamo {self.nombre}, tengo {self.nPatas} patas y sueno así: {self.habla()}'
+
+    def habla(self):
+        return ''
